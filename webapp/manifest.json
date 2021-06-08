@@ -1,0 +1,52 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "smart.controls.demo",
+		"type": "application",
+		"title": "Smart Controls Demo",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/mockdata/metadata.xml",
+					"annotations": [
+						"annotation0"
+					]
+				}
+			},
+			"annotation0": {
+				"uri": "localService/mockdata/annotation0.xml",
+				"type": "ODataAnnotation"
+			}
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "smart.controls.demo.view.App",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"minUI5Version": "1.89.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.comp": {},
+				"sap.ui.table": {},
+				"sap.suite.ui.microchart": {},
+				"sap.ui.fl": {}
+			}
+		},
+		"models": {
+			"": {
+				"dataSource": "mainService"
+			}
+		}
+	}
+}

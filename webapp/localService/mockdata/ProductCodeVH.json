@@ -1,0 +1,70 @@
+{
+    "d": {
+        "__count": "7",
+        "results": [
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('Description')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('Description')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductName": "PC",
+                "ProductCode": "PD-101"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-102')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-102')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-102",
+                "ProductName": "Keyboard"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-103')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-103')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-103",
+                "ProductName": "Mouse"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-104')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-104')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-104",
+                "ProductName": "Chair"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-105')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-105')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-105",
+                "ProductName": "Table"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-106')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-106')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-106",
+                "ProductName": "Headsets"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ProductCodeVH('PD-107')",
+                    "uri": "salesreport.SalesReport/ProductCodeVH('PD-107')",
+                    "type": "ZSALESREPORT_CDS.ProductCodeVHType"
+                },
+                "ProductCode": "PD-107",
+                "ProductName": "Speakers"
+            }
+        ]
+    }
+}

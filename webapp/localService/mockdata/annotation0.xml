@@ -1,0 +1,130 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+  <edmx:Reference Uri="/services_kiw/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/UI.xml">
+    <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1" />
+  </edmx:Reference>
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/cs01/vocabularies/Org.OData.Measures.V1.xml">
+    <edmx:Include Alias="CQP" Namespace="Org.OData.Measures.V1" />
+  </edmx:Reference>
+  <edmx:Reference Uri="/services_kiw/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/Common.xml">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1" />
+  </edmx:Reference>
+  <edmx:Reference Uri="/services_kiw/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata">
+    <edmx:Include Alias="ZSALESREPORT_CDS" Namespace="ZSALESREPORT_CDS" />
+  </edmx:Reference>
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1" />
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Alias="ZSALESREPORT_CDSAnnotation" Namespace="sap.cbesh.cestbon.ZSALESREPORT_CDSAnnotation">
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductCode">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="Product Code" />
+            <PropertyValue Property="CollectionPath" String="ProductCodeVH" />
+            <PropertyValue Property="SearchSupported" Bool="true" />
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ProductCode" />
+                  <PropertyValue Property="ValueListProperty" String="ProductCode" />
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ProductName" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/Unit">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/CriticalityState">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/SoldPercentUnit">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductName">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductCode">
+        <Annotation Term="Common.Text" Path="ProductName">
+          <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType">
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ProductCode" />
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+              <Annotation Term="com.sap.vocabularies.HTML5.v1.CssDefaults">
+                <Record>
+                  <PropertyValue Property="width" String="230px"/>
+                </Record>
+              </Annotation>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Produced" />
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Sold" />
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="SoldPercent" />
+              <PropertyValue Property="Criticality" Path="CriticalityState" />
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Criticality" />
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium" />
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.Chart">
+          <Record>
+            <PropertyValue EnumMember="UI.ChartType/Pie" Property="ChartType" />
+            <PropertyValue Property="Measures">
+              <Collection>
+                <PropertyPath>Sold</PropertyPath>
+              </Collection>
+            </PropertyValue>
+            <PropertyValue Property="MeasureAttributes">
+              <Collection>
+                <Record Type="UI.ChartMeasureAttributeType">
+                  <PropertyValue Property="DataPoint" AnnotationPath="@UI.DataPoint" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.DataPoint">
+          <Record>
+            <PropertyValue Path="Sold" Property="Value" />
+            <PropertyValue Path="Produced" Property="MaximumValue" />
+            <PropertyValue Path="Criticality" Property="Criticality" />
+          </Record>
+        </Annotation>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,119 @@
+{
+    "d": {
+        "__count": "7",
+        "results": [
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-101')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-101')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductName": "PC",
+                "ProductCode": "PD-101",
+                "Sold": "500",
+                "Produced": "750",
+                "CriticalityState": 0,
+                "Criticality": "Neutral",
+                "Unit": "PCS",
+                "SoldPercent": 66.667,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-102')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-102')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-102",
+                "ProductName": "Keyboard",
+                "Sold": "380",
+                "Produced": "400",
+                "CriticalityState": 3,
+                "Criticality": "Positive",
+                "Unit": "PCS",
+                "SoldPercent": 95,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-103')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-103')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-103",
+                "ProductName": "Mouse",
+                "Sold": "320",
+                "Produced": "750",
+                "CriticalityState": 2,
+                "Criticality": "Critical",
+                "Unit": "PCS",
+                "SoldPercent": 42.667,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-104')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-104')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-104",
+                "ProductName": "Chair",
+                "Sold": "200",
+                "Produced": "800",
+                "CriticalityState": 1,
+                "Criticality": "Negative",
+                "Unit": "PCS",
+                "SoldPercent": 25,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-105')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-105')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-105",
+                "ProductName": "Table",
+                "Sold": "150",
+                "Produced": "550",
+                "CriticalityState": 1,
+                "Criticality": "Negative",
+                "Unit": "PCS",
+                "SoldPercent": 27.273,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-106')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-106')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-106",
+                "ProductName": "Headsets",
+                "Sold": "850",
+                "Produced": "1000",
+                "CriticalityState": 3,
+                "Criticality": "Positive",
+                "Unit": "PCS",
+                "SoldPercent": 85,
+                "SoldPercentUnit": "%"
+            },
+            {
+                "__metadata": {
+                    "id": "salesreport.SalesReport/ZSALESREPORT('PD-107')",
+                    "uri": "salesreport.SalesReport/ZSALESREPORT('PD-107')",
+                    "type": "ZSALESREPORT_CDS.ZSALESREPORTType"
+                },
+                "ProductCode": "PD-107",
+                "ProductName": "Speakers",
+                "Sold": "997",
+                "Produced": "1200",
+                "CriticalityState": 3,
+                "Criticality": "Positive",
+                "Unit": "PCS",
+                "SoldPercent": 83.083,
+                "SoldPercentUnit": "%"
+            }
+        ]
+    }
+}
