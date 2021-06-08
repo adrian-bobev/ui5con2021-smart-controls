@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart Controls Demo</title>
+
+	<script id="sap-ui-bootstrap"
+		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-libs="
+			sap.ui.core, sap.m,sap.f, sap.ui.comp,
+			sap.ui.table, sap.suite.ui.microchart, sap.ui.fl"
+		data-sap-ui-xx-waitForTheme="true"
+		data-sap-ui-theme="sap_fiori_3"
+		data-sap-ui-resourceRoots='{
+			"smart.controls.demo": "./"
+		}'
+		data-sap-ui-onInit="module:smart/controls/demo/localService/initMockServer"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-xx-componentPreload="off"
+    data-sap-ui-xx-nosync="false"
+	>
+	</script>
+</head>
+
+<body class="sapUiBody">
+	<div data-sap-ui-component data-name="smart.controls.demo"></div>
+</body>
+</html>

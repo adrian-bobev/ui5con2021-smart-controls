@@ -1,0 +1,27 @@
+{
+  "name": "ui5con2021-smart-controls",
+  "version": "1.0.0",
+  "description": "Demo project for Smart Controls",
+  "main": "webapp/index.html",
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-bobev/ui5con2021-smart-controls.git"
+  },
+  "keywords": [
+    "sapui5",
+    "smartcontrols"
+  ],
+  "author": "Adrian Bobev, Jay Barbhaiya",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/adrian-bobev/ui5con2021-smart-controls/issues"
+  },
+  "homepage": "https://github.com/adrian-bobev/ui5con2021-smart-controls#readme",
+  "devDependencies": {
+    "@ui5/cli": "^2.11.0"
+  }
+}

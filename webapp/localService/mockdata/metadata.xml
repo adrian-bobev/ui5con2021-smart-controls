@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+  <edmx:DataServices m:DataServiceVersion="2.0">
+    <Schema Namespace="ZSALESREPORT_CDS" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="ZSALESREPORTType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ProductCode" />
+        </Key>
+        <Property Name="ProductCode" Type="Edm.String" Nullable="false" sap:text="ProductName" MaxLength="10" sap:label="Product Code" sap:value-list="standard" />
+        <Property Name="ProductName" Type="Edm.String" Nullable="false" sap:label="Product Name" />
+        <Property Name="Sold" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="Unit" sap:label="Sold" />
+        <Property Name="SoldPercent" Type="Edm.Decimal" Precision="3" Scale="3" sap:unit="SoldPercentUnit" sap:label="Sold Percentage" />
+        <Property Name="Produced" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="Unit" />
+        <Property Name="Criticality" Type="Edm.String" MaxLength="10" />
+        <Property Name="CriticalityState" Type="Edm.Int32" sap:label="Criticality State" />
+        <Property Name="Unit" Type="Edm.String" MaxLength="3" sap:label="Unit" sap:semantics="unit-of-measure" />
+        <Property Name="SoldPercentUnit" Type="Edm.String" MaxLength="1" sap:label="Sold Percentage Unit" sap:semantics="unit-of-measure" />
+      </EntityType>
+      <EntityType Name="ProductCodeVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ProductCode" />
+        </Key>
+        <Property Name="ProductCode" Type="Edm.String" Nullable="false" sap:text="ProductName" MaxLength="10" sap:label="Product Code" />
+        <Property Name="ProductName" Type="Edm.String" Nullable="false" sap:label="Product Name" />
+      </EntityType>
+      <EntityContainer Name="ZSALESREPORT_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+        <EntitySet Name="ZSALESREPORT" EntityType="ZSALESREPORT_CDS.ZSALESREPORTType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1" />
+        <EntitySet Name="ProductCodeVH" EntityType="ZSALESREPORT_CDS.ProductCodeVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1" />
+      </EntityContainer>
+      <atom:link rel="self" href="https://my.sampleservice.com:44300/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
+      <atom:link rel="latest-version" href="https://my.sampleservice.com:44300/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
